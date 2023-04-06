@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #084236;
 }
 
 :root {
@@ -26,4 +27,22 @@ aside {
 main {
   grid-area: main;
   background: #dce4e3;
+  padding: 18px;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+}
+
+aside header {
+  margin-left: 1.5rem;
+  padding: 2.6rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside header:last-child {
+  cursor: pointer;
 }
