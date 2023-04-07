@@ -38,20 +38,20 @@ main h1 {
 
 aside header {
   margin-left: 1.5rem;
-  padding: 2.6rem 0;
+  padding: 2.6rem 1.4rem;
   display: flex;
   justify-content: space-between;
-}
-
-aside {
-  padding: 0 1.4rem;
 }
 
 aside header img:last-child {
   cursor: pointer;
 }
 
-form {
+aside nav {
+  padding: 0 1.4rem;
+}
+
+aside nav form {
   display: flex;
 }
 
@@ -81,7 +81,7 @@ form input::-webkit-search-cancel-button {
   display: none;
 }
 
-ul {
+nav ul {
   margin: 2rem 0 0 1.3rem;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ ul {
   list-style: none;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   gap: 1.3rem;
