@@ -22,6 +22,7 @@ body {
 aside {
   grid-area: aside;
   background: #18c29c;
+  position: relative;
 }
 
 main {
@@ -101,4 +102,41 @@ ul li a {
   font-weight: 400;
   line-height: 2.2rem;
   text-decoration: none;
+}
+
+section {
+  padding: 0.8rem 1.4rem;
+  background: #8ed7c6;
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+section img {
+  width: 4.5rem;
+}
+
+#user-name span:first-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+#user-name span:last-child {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+section a {
+  margin-left: 3.6rem;
+  cursor: pointer;
+}
+
+section a img {
+  width: 2.4rem !important;
 }
