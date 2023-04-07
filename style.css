@@ -38,11 +38,67 @@ main h1 {
 
 aside header {
   margin-left: 1.5rem;
-  padding: 2.6rem 1.4rem;
+  padding: 2.6rem 0;
   display: flex;
   justify-content: space-between;
 }
 
-aside header:last-child {
+aside {
+  padding: 0 1.4rem;
+}
+
+aside header img:last-child {
   cursor: pointer;
+}
+
+form {
+  display: flex;
+}
+
+form img {
+  padding: 1.4rem;
+  background: #8ed7c6;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+form input {
+  background: #8ed7c6;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  border-radius: 0 1.2rem 1.2rem 0;
+  font-weight: 400;
+}
+
+form input::placeholder {
+  color: #084236;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+form input::-webkit-search-cancel-button {
+  display: none;
+}
+
+ul {
+  margin: 2rem 0 0 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+
+  list-style: none;
+}
+
+ul li a{
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+
+  width: max-content;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  text-decoration: none;
 }
