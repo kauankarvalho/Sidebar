@@ -138,3 +138,11 @@ body {
 .u-pointer {
   cursor: pointer;
 }
+
+.is-hover {
+  transition: all 0.2s;
+}
+
+.is-hover:hover {
+  opacity: 0.6;
+}
