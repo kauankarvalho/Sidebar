@@ -16,57 +16,79 @@
   </head>
 
   <body>
-    <main>
-      <h1>Dashboard</h1>
+    <main class="c-main">
+      <h1 class="c-main__title">Dashboard</h1>
     </main>
 
-    <aside>
-      <header>
-        <a href="/"><img src="./assets/logo.svg" alt="Logo VET" /></a>
-        <img src="./assets/menu.svg" alt="Menu" />
+    <aside class="c-sidebar">
+      <header class="c-sidebar__header">
+        <a class="c-sidebar__logo" href="/"><img src="./assets/logo.svg" alt="Logo VET" /></a>
+        <img class="u-icon-size u-pointer" src="./assets/menu.svg" alt="Menu" />
       </header>
 
-      <nav>
-        <form action="/" method="">
-          <img src="./assets/search.svg" alt="Lupa de pesquisa" />
-          <input type="search" name="q" aria-label="Campo de busca" placeholder="Buscar" />
+      <nav class="c-sidebar__nav">
+        <form class="c-sidebar__form u-background-light-green" action="/" method="">
+          <img class="u-icon-size u-pointer" src="./assets/search.svg" alt="Lupa de pesquisa" />
+          <input
+            class="c-sidebar__search u-background-light-green u-typography"
+            type="search"
+            name="q"
+            aria-label="Campo de busca"
+            placeholder="Buscar"
+          />
         </form>
 
-        <ul>
+        <ul class="c-sidebar__list">
           <li>
-            <a href="#"><img src="./assets/grid.svg" alt="Icone de grid" />Dashboad</a>
+            <a class="c-sidebar__item u-typography" href="#">
+              <img class="u-icon-size" src="./assets/grid.svg" alt="Icone de grid" />
+              Dashboad
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="./assets/pet.svg" alt="Icone de pet" />Pets</a>
+            <a class="c-sidebar__item u-typography" href="#">
+              <img class="u-icon-size" src="./assets/pet.svg" alt="Icone de pet" />
+              Pets
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="./assets/user.svg" alt="Icone de usuário" />Clientes</a>
+            <a class="c-sidebar__item u-typography" href="#">
+              <img class="u-icon-size" src="./assets/user.svg" alt="Icone de usuário" />
+              Clientes
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="./assets/user-md.svg" alt="Icone de usuário médico" />Vets</a>
+            <a class="c-sidebar__item u-typography" href="#">
+              <img class="u-icon-size" src="./assets/user-md.svg" alt="Icone de usuário médico" />
+              Vets
+            </a>
           </li>
 
           <li>
-            <a href="#"><img src="./assets/settings.svg" alt="Icone de engrenagem" />Ajustes</a>
+            <a class="c-sidebar__item u-typography" href="#">
+              <img class="u-icon-size" src="./assets/settings.svg" alt="Icone de engrenagem" />
+              Ajustes
+            </a>
           </li>
+
         </ul>
       </nav>
 
-      <section>
-        <img src="./assets/avatar.png" alt="Foto de perfil" />
+      <section class="c-sidebar__profile u-background-light-green">
+        <img class="c-sidebar__avatar" src="./assets/avatar.png" alt="Foto de perfil" />
 
         <div id="user-name">
-          <span>Eleanor Pena</span>
+          <span class="u-typography">Eleanor Pena</span>
           <br />
-          <span>Veterinária</span>
+          <span class="u-typography--small">Veterinária</span>
         </div>
 
-        <a href="#"><img src="./assets/log-out.svg" alt="Botão de sair" /></a>
+        <a class="u-icon-size c-sidebar__log-out" href="#"><img src="./assets/log-out.svg" alt="Botão de sair" /></a>
       </section>
-
+      
     </aside>
   </body>
 </html>

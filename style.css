@@ -14,99 +14,89 @@
 body {
   display: grid;
   grid-template-columns: 25rem 1fr;
-  grid-template-areas: "aside main";
+  grid-template-areas: "sidebar main";
 
   height: 100vh;
 }
 
-aside {
-  grid-area: aside;
-  background: #18c29c;
-  position: relative;
-}
-
-main {
+.c-main {
   grid-area: main;
   background: #dce4e3;
   padding: 18px;
 }
 
-main h1 {
+.c-main__title {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 3.8rem;
 }
 
-aside header {
+.c-sidebar {
+  grid-area: sidebar;
+  background: #18c29c;
+  position: relative;
+}
+
+.c-sidebar__header {
   margin-left: 1.5rem;
   padding: 2.6rem 1.4rem;
   display: flex;
   justify-content: space-between;
 }
 
-aside header img:last-child {
-  cursor: pointer;
+.c-sidebar__logo {
+  width: 6.4rem;
+  height: 2.5rem;
 }
 
-aside nav {
+.c-sidebar__nav {
   padding: 0 1.4rem;
 }
 
-aside nav form {
-  display: flex;
-}
-
-form img {
+.c-sidebar__form {
   padding: 1.4rem;
-  background: #8ed7c6;
-  border-radius: 1.2rem 0 0 1.2rem;
+  display: flex;
+  gap: 1.3rem;
+  border-radius: 12px;
 }
 
-form input {
-  background: #8ed7c6;
+.c-sidebar__search {
   width: 100%;
-
-  border: none;
   outline: none;
-  border-radius: 0 1.2rem 1.2rem 0;
-  font-weight: 400;
+  border: none;
+  border-radius: 0 12px 12px 0;
 }
 
-form input::placeholder {
+.c-sidebar__search::placeholder {
   color: #084236;
   font-size: 1.5rem;
   font-weight: 400;
+  line-height: 2.25rem;
 }
 
-form input::-webkit-search-cancel-button {
+.c-sidebar__search::-webkit-search-cancel-button {
   display: none;
 }
 
-nav ul {
+.c-sidebar__list {
   margin: 2rem 0 0 1.3rem;
   display: flex;
   flex-direction: column;
   gap: 3.4rem;
-
   list-style: none;
 }
 
-ul li a {
+.c-sidebar__item {
   display: flex;
   align-items: center;
   gap: 1.3rem;
 
   width: max-content;
-
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.2rem;
   text-decoration: none;
 }
 
-section {
+.c-sidebar__profile {
   padding: 0.8rem 1.4rem;
-  background: #8ed7c6;
   display: flex;
   gap: 0.9rem;
   align-items: center;
@@ -116,27 +106,35 @@ section {
   bottom: 0;
 }
 
-section img {
+.c-sidebar__avatar {
   width: 4.5rem;
 }
 
-#user-name span:first-child {
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2.2rem;
+.c-sidebar__log-out {
+  margin-left: 3.7rem;
+  display: flex;
+  align-items: center;
 }
 
-#user-name span:last-child {
-  font-size: 1.2rem;
+.u-background-light-green {
+  background: #8ed7c6;
+}
+
+.u-typography {
+  font-size: 1.5rem;
   font-weight: 400;
+  line-height: 2.25rem;
+}
+
+.u-typography--small {
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
-section a {
-  margin-left: 3.6rem;
-  cursor: pointer;
+.u-icon-size {
+  width: 2.4rem;
 }
 
-section a img {
-  width: 2.4rem !important;
+.u-pointer {
+  cursor: pointer;
 }
