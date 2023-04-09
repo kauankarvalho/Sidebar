@@ -63,6 +63,11 @@ body {
   height: 2.5rem;
 }
 
+.c-sidebar__menu {
+  position: absolute;
+  right: 2.7rem;
+}
+
 .c-sidebar__nav {
   padding: 0 1.4rem;
 }
@@ -110,9 +115,9 @@ body {
 }
 
 .c-sidebar__profile {
+  padding-left: 1.4rem;
   display: flex;
   gap: 0.9rem;
-  justify-content: center;
   align-items: center;
 
   width: 100%;
@@ -125,13 +130,11 @@ body {
   width: 4.5rem;
 }
 
-.c-sidebar__user-name {
-  margin-right: 3.7rem;
-}
-
 .c-sidebar__log-out {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 2.7rem;
 }
 
 .u-background-light-green {
