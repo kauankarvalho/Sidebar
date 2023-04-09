@@ -34,7 +34,10 @@ body {
 .c-sidebar {
   grid-area: sidebar;
   background: #18c29c;
-  position: relative;
+
+  position: fixed;
+  width: 25rem;
+  height: 100vh;
 }
 
 .c-sidebar__header {
