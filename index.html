@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
+    <script src="./script.js" defer></script>
+
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="icon" href="./assets/favicon.svg" type="image/svg" />
@@ -20,17 +22,17 @@
       <h1 class="c-main__title">Dashboard</h1>
     </main>
 
-    <aside class="c-sidebar">
+    <aside class="c-sidebar js-sidebar">
       <header class="c-sidebar__header">
-        <a class="c-sidebar__logo" href="/"><img src="./assets/logo.svg" alt="Logo VET" /></a>
-        <img class="u-icon-size u-pointer is-hover" src="./assets/menu.svg" alt="Menu" />
+        <a class="c-sidebar__logo js-item" href="/"><img src="./assets/logo.svg" alt="Logo VET" /></a>
+        <img class="u-icon-size u-pointer is-hover js-menu" src="./assets/menu.svg" alt="Menu" />
       </header>
 
       <nav class="c-sidebar__nav">
         <form class="c-sidebar__form u-background-light-green" action="/" method="">
           <img class="u-icon-size u-pointer is-hover" src="./assets/search.svg" alt="Lupa de pesquisa" />
           <input
-            class="c-sidebar__search u-background-light-green u-typography"
+            class="c-sidebar__search u-background-light-green u-typography js-item"
             type="search"
             name="q"
             aria-label="Campo de busca"
@@ -42,45 +44,45 @@
           <li>
             <a class="c-sidebar__item u-typography is-hover" href="#">
               <img class="u-icon-size" src="./assets/grid.svg" alt="Icone de grid" />
-              Dashboad
+              <span class="js-item">Dashboad</span>
             </a>
           </li>
 
           <li>
             <a class="c-sidebar__item u-typography is-hover" href="#">
               <img class="u-icon-size" src="./assets/pet.svg" alt="Icone de pet" />
-              Pets
+              <span class="js-item">Pets</span>
             </a>
           </li>
 
           <li>
             <a class="c-sidebar__item u-typography is-hover" href="#">
               <img class="u-icon-size" src="./assets/user.svg" alt="Icone de usuário" />
-              Clientes
+              <span class="js-item">Clientes</span>
             </a>
           </li>
 
           <li>
             <a class="c-sidebar__item u-typography is-hover" href="#">
               <img class="u-icon-size" src="./assets/user-md.svg" alt="Icone de usuário médico" />
-              Vets
+              <span class="js-item">Vets</span>
             </a>
           </li>
 
           <li>
             <a class="c-sidebar__item u-typography is-hover" href="#">
               <img class="u-icon-size" src="./assets/settings.svg" alt="Icone de engrenagem" />
-              Ajustes
+              <span class="js-item">Ajustes</span>
             </a>
           </li>
-
+          
         </ul>
       </nav>
 
       <section class="c-sidebar__profile u-background-light-green">
-        <img class="c-sidebar__avatar" src="./assets/avatar.png" alt="Foto de perfil" />
+        <img class="c-sidebar__avatar js-item" src="./assets/avatar.png" alt="Foto de perfil" />
 
-        <div id="user-name">
+        <div id="user-name" class="c-sidebar__user-name js-item">
           <span class="u-typography">Eleanor Pena</span>
           <br />
           <span class="u-typography--small">Veterinária</span>

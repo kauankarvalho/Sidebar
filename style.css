@@ -17,6 +17,11 @@ body {
   grid-template-areas: "sidebar main";
 
   height: 100vh;
+  transition: all 0.4s;
+}
+
+.c-body--sidebar-close {
+  grid-template-columns: 7.8rem 1fr;
 }
 
 .c-main {
@@ -38,6 +43,11 @@ body {
   position: fixed;
   width: 25rem;
   height: 100vh;
+  transition: all 0.4s;
+}
+
+.c-sidebar--close {
+  width: 7.8rem;
 }
 
 .c-sidebar__header {
@@ -45,6 +55,7 @@ body {
   padding: 2.6rem 1.4rem;
   display: flex;
   justify-content: space-between;
+  height: 7.7rem;
 }
 
 .c-sidebar__logo {
@@ -99,12 +110,13 @@ body {
 }
 
 .c-sidebar__profile {
-  padding: 0.8rem 1.4rem;
   display: flex;
   gap: 0.9rem;
+  justify-content: center;
   align-items: center;
 
   width: 100%;
+  height: 6rem;
   position: absolute;
   bottom: 0;
 }
@@ -113,8 +125,11 @@ body {
   width: 4.5rem;
 }
 
+.c-sidebar__user-name {
+  margin-right: 3.7rem;
+}
+
 .c-sidebar__log-out {
-  margin-left: 3.7rem;
   display: flex;
   align-items: center;
 }
@@ -148,4 +163,8 @@ body {
 
 .is-hover:hover {
   opacity: 0.6;
+}
+
+.is-hidden {
+  display: none;
 }
