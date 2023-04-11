@@ -225,7 +225,7 @@ body {
 
   .c-sidebar__list {
     margin: 0;
-    padding-top: 12rem;
+    padding-top: 0;
     background: #18c29c;
     align-items: center;
 
@@ -234,7 +234,11 @@ body {
     z-index: 100;
 
     width: 100vw;
-    height: 100vh;
+    height: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.4s;
   }
 
   .c-sidebar__list .u-typography {
@@ -247,6 +251,14 @@ body {
 
   .c-sidebar__profile {
     display: none;
+  }
+
+  .is-active {
+    padding-top: 12rem;
+    height: 100vh;
+
+    visibility: visible;
+    overflow: visible;
   }
 }
 

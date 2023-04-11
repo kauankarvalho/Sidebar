@@ -28,10 +28,9 @@ function detectScreenSize() {
     })
   } else {
     const list = document.querySelector(".js-list")
-    list.classList.add("is-hidden")
 
     function openAndCloseMenuMobile() {
-      list.classList.toggle("is-hidden")
+      list.classList.toggle("is-active")
     }
 
     menu.addEventListener("click", openAndCloseMenuMobile)
