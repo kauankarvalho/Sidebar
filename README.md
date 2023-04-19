@@ -31,7 +31,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 ## 📖 Aprendizado
 
 - Aprendi a metodologia CSS BEM para escrever CSS de forma mais organizada e modular;
-- Aprendi a usar a nomenclatura de namespaces no CSS para evitar conflitos de nomenclatur;
+- Aprendi a usar a nomenclatura de namespaces no CSS para evitar conflitos de nomenclatura;
 - Aprimorei minhas habilidades em organizar códigos JavaScript, tornando-os mais legíveis;
 - Eu aprendi conceitos de animações suaves em CSS para criar uma experiência agradável e fluida;
 - Eu aprendi a utilizar JavaScript para ativar códigos específicos, os quais variam de acordo com o tamanho da página.
