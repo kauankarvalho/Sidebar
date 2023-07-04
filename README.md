@@ -40,7 +40,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 O projeto Sidebar consiste em criar uma barra lateral de navegação para uma aplicação web responsiva utilizando HTML, CSS e JavaScript. O objetivo é construir uma barra que possua funcionalidades como a abertura e fechamento automático em dispositivos móveis, ícones interativos e opções de menu. Além disso, o desafio requer a implementação de uma animação suave e fluida para o efeito de transição da barra lateral.
 
-## 💡 Tecnologias
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
